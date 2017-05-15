@@ -11,7 +11,8 @@ NYC Laws
     :maxdepth: 1
     :glob:
 
-    */*
+    nycadmincode/index
+    nycchapter/index
 
 .. Indices and tables
    ==================

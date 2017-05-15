@@ -10,7 +10,7 @@ NYC Administrative Code
     :maxdepth: 1
     :glob:
 
-    */*
+    */index
 
 .. Indices and tables
    ==================

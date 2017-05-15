@@ -10,5 +10,5 @@ NYC Charter
     :maxdepth: 1
     :glob:
 
-    */*
+    */index
 
