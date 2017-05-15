@@ -1,0 +1,97 @@
+Chapter 8 - SILVER ALERT SYSTEM
+===============================
+
+Section 10-801
+--------------
+
+Section 10-801 ::    
+        
+     
+        §  10-801  Definitions.  a. "Administering agency" shall mean any city
+      agency,  office,  department,  division,  bureau   or   institution   of
+      government,  the expenses of which are paid in whole or in part from the
+      city treasury, as the mayor shall designate.
+        b. "Silver alert" shall mean the communication to the public by a city
+      agency of identifying information concerning a vulnerable senior who  is
+      reported  missing  to  a  law  enforcement  agency  under  circumstances
+      indicating that the person is in imminent danger of serious bodily  harm
+      or death.
+        c.  "Vulnerable senior" shall mean a person who is sixty-five years of
+      age or older with dementia, as a result  of  Alzheimer's  disease  or  a
+      similar condition.
+    
+    
+    
+    
+    
+    
+    
+
+Section 10-802
+--------------
+
+Section 10-802 ::    
+        
+     
+        § 10-802 Silver alert system. The administering agency shall establish
+      a silver alert system, pursuant to the provisions of this chapter of the
+      code,  that  will  provide  rapid  notification  to  the  public  when a
+      vulnerable senior is reported  missing  under  circumstances  indicating
+      that the person is in imminent danger of serious bodily harm or death.
+    
+    
+    
+    
+    
+    
+    
+
+Section 10-803
+--------------
+
+Section 10-803 ::    
+        
+     
+        §  10-803  Procedures.  a.  The  administering  agency shall develop a
+      protocol for notification to organizations such as media  organizations,
+      senior service providers, medical facilities and community organizations
+      when a silver alert is issued.
+        b.  The administering agency shall, as appropriate, consult with other
+      city agencies, including, but not limited to, the police department, the
+      fire department, the office of emergency management, the human resources
+      administration, the department for the aging, the department  of  health
+      and  mental hygiene and the department of transportation, to collect and
+      disseminate information regarding the person for whom the  silver  alert
+      was issued.
+        c.  The  administering  agency  shall  issue  a  silver  alert  within
+      twenty-four hours of the determination that a vulnerable senior has been
+      reported missing under circumstances indicating that the  person  is  in
+      imminent danger of serious bodily harm or death. The silver alert may be
+      issued  by  any  appropriate means, including, but not limited to, email
+      notifications, text messages, telephone calls, television broadcasts  or
+      radio  broadcasts.  The silver alert may be issued at repeated intervals
+      within the discretion of the administering  agency  until  such  missing
+      person  is  found  or until the administering agency determines that the
+      issuance of a silver alert is no longer appropriate.
+        d. The information about the person for  whom  the  silver  alert  was
+      issued, if available and capable of transmission, shall include, but not
+      be  limited  to:  (1)  the  person's  name;  (2) the person's age; (3) a
+      physical description of the person; (4) the last  known  location  where
+      the  person  was  seen, which shall not include the exact address of the
+      person's home; (5)  a  recent  photograph  of  the  person;  and  (6)  a
+      description  of  any  motor  vehicle  the  person may have been driving,
+      provided that the administering agency may refrain from  disclosing  any
+      such information if disclosure is inappropriate under the circumstances.
+        e.  The  administering agency may use its discretion to issue a silver
+      alert for a person under the age of 65 who  is  reported  missing  under
+      circumstances  indicating  that  the  person  is  in  imminent danger of
+      serious bodily harm or death, where such missing person has dementia, as
+      a result of Alzheimer's disease or a similar condition.
+    
+    
+    
+    
+    
+    
+    
+

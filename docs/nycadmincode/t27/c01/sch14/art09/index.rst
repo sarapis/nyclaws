@@ -1,0 +1,51 @@
+Article 9 - COMBUSTION AIR
+==========================
+
+Section 27-807
+--------------
+
+Section 27-807 ::    
+        
+     
+        §  27-807  Air  supply.  (a)  Oil  fuels. The air supply for equipment
+      burning fuel oil  shall  comply  with  the  requirements  in  applicable
+      standards  in  reference standard RS-14. Ventilation shall be capable of
+      providing at least thirty-six cfm of air for each gallon of oil per hour
+      required to fire the equipment to gross output.
+        (b) Gas fuels. The air supply for equipment burning gas  shall  comply
+      with the requirements of article sixteen of this subchapter.
+        (c)  Solid  fuels.  The  air  supply for equipment burning solid fuels
+      shall comply with those required for  burning  fuel  oil  based  on  Btu
+      equivalent of the solid fuel.
+        (d)  Mechanical  ventilation.  If  the  ventilation for the purpose of
+      combustion is supplied mechanically, the  ventilating  system  shall  be
+      electrically  interlocked  with the burner so that when the burner is in
+      operation, the ventilating system shall maintain the room in  which  the
+      equipment is located at a pressure not less than the outdoor atmospheric
+      pressure.
+    
+    
+    
+    
+    
+    
+    
+
+Section 27-808
+--------------
+
+Section 27-808 ::    
+        
+     
+        §  27-808  Flue dampers. Dampers in flues shall be constructed so that
+      they cannot completely cut off the passage of flue gases  at  any  time.
+      Tight-closing dampers may be installed with approved automatic draft and
+      combustion controls.
+    
+    
+    
+    
+    
+    
+    
+

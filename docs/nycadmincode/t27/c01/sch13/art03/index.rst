@@ -1,0 +1,25 @@
+Article 3 - OPERATION AND MAINTENANCE
+=====================================
+
+Section 27-782
+--------------
+
+Section 27-782 ::    
+        
+     
+        §  27-782  General  requirements. All systems shall be maintained in a
+      clean and orderly condition,  free  from  accumulations  of  dust,  oily
+      waste,  or debris. All machinery and all operating devices on piping and
+      ductwork shall be kept readily accessible for  inspections  and  repair.
+      Plenum  chambers, air ducts, and cooling and heating coils shall be kept
+      clean. Filters shall be cleaned or renewed at proper intervals to insure
+      safe  operation  and  adequate  air  flow  and  shall  comply  with  the
+      applicable requirements of the fire prevention code.
+    
+    
+    
+    
+    
+    
+    
+

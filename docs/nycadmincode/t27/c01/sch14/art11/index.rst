@@ -1,0 +1,20 @@
+Article 11 - RESIDENCE-TYPE WARM AIR HEATING SYSTEMS
+====================================================
+
+Section 27-812
+--------------
+
+Section 27-812 ::    
+        
+     
+        § 27-812 General requirements. Residence-type warm air heating systems
+      shall  be  designed  and  installed  in  accordance  with the applicable
+      requirements of reference standard RS-14.
+    
+    
+    
+    
+    
+    
+    
+
