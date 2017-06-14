@@ -29,13 +29,7 @@
 
   {# CSS #}
 
-  {# OPENSEARCH #}
-  {% if not embedded %}
-    {% if use_opensearch %}
-      <link rel="search" type="application/opensearchdescription+xml" title="{% trans docstitle=docstitle|e %}Search within {{ docstitle }}{% endtrans %}" href="{{ pathto('_static/opensearch.xml', 1) }}"/>
-    {% endif %}
-
-  {% endif %}
+ 
 
   {# RTD hosts this file, so just load on non RTD builds #}
   {% if not READTHEDOCS %}
