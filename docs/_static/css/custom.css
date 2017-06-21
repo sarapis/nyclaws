@@ -1,0 +1,400 @@
+/* Updated and New CSS */
+.wy-body-for-nav {
+    background: none
+}
+.wy-nav-content-wrap {
+    margin-left: 0;
+    min-height: auto;
+    margin-bottom:30px;
+}
+.wy-grid-for-nav {
+    position:inherit;
+    height: auto
+}
+
+.wy-nav-content {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0
+}
+
+body {
+    font-size: 1.0625rem;
+    font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif !important;
+    font-weight: normal;
+    line-height: 1.5;
+    color: #222222;
+    margin-bottom: -288px
+}
+/* New CSS */
+
+header {
+    background: #004A83;
+    border-bottom: 1px solid #DEE0E3;
+    margin-bottom: 1.5rem
+}
+
+header .row:after,
+.footer .row:after {
+    clear: both
+}
+
+header .row::before,
+header .row::after,
+.footer .row::before,
+.footer .row::after {
+    content: ' ';
+    display: table
+}
+
+header .row,
+header .row {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header .top-links {
+    background: #002d50;
+    color: white;
+    font-size: 0.875rem;
+    padding-right: 0.75rem;
+}
+
+header .top-links a {
+    color: white;
+    margin: 0 0.375rem
+}
+
+header .locale {
+    float: left;
+    height: 2.25rem;
+    margin-left: 0.75rem
+}
+
+header .inline-block,
+footer .inline-block {
+    display: inline-block
+}
+
+header label {
+    line-height: 1.5rem;
+    margin: 0
+}
+
+header form.locale-form {
+    display: inline-block;
+    position: relative
+}
+
+header form.locale-form label {
+    color: white;
+    font-size: 0.875rem;
+    font-weight: normal
+}
+
+header form.locale-form select.locale-switcher {
+    background-color: transparent;
+    border: 0;
+    color: white;
+    font-size: 0.875rem;
+    margin-bottom: 0;
+    outline: none;
+    padding-left: 0.1875rem;
+    padding-right: 1.5rem;
+    width: auto
+}
+
+header form.locale-form select {
+    background-image: url('http://proposals.votedevin.com/assets/language_select-53ebcec9cf71c3ed36a98141a81717ca6b24efa35fd9f85ec6b2113ce60c1953.png');
+    background-origin: border-box;
+    background-position: right;
+    background-size: 24px 24px
+}
+
+header select {
+    height: 2.4375rem;
+    padding: 0.5rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    border: 1px solid #cacaca;
+    margin: 0 0 1rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-family: inherit;
+    line-height: normal;
+    color: #222222;
+    background-color: #ffffff;
+    border-radius: 0.1875rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' width='32' height='24' viewBox='0 0 32 24'><polygon points='0,0 32,0 16,24' style='fill: rgb%28138, 138, 138%29'></polygon></svg>");
+    background-size: 9px 6px;
+    background-position: right -1rem center;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    padding-right: 1.5rem;
+    text-transform: none;
+    box-shadow: none
+}
+
+header .top-links ul {
+    margin-bottom: 0
+}
+
+header .top-links ul li {
+    display: inline-block
+}
+
+header .top-links ul li::after {
+    content: "|"
+}
+
+header .top-links ul li:last-child::after {
+    content: none
+}
+
+header .external-links {
+    float: right
+}
+
+header .external-links {
+    padding: 0.375rem 0;
+    text-align: center
+}
+
+header .no-bullet {
+    margin-left: 0;
+    list-style: none
+}
+
+header .subnavigation {
+    background: white;
+    padding-bottom: 0
+}
+
+header .subnavigation ul li {
+    display: inline-block;
+    margin-right: 2.25rem
+}
+
+header .subnavigation ul li a {
+    color: #222222;
+    display: block;
+    font-weight: bold;
+    width: auto;
+    line-height: 3rem;
+    position: relative;
+    text-align: left
+}
+
+header .top-bar-title {
+    float: left;
+    margin-right: 1rem
+}
+
+.show-for-small-only {
+    display: none !important
+}
+
+header .logo {
+    line-height: 3rem;
+    margin-top: 0
+}
+
+header .logo {
+    color: white;
+    display: inline-block;
+    font-family: 'Lato'!important;
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+header .top-bar .top-bar-title a {
+    margin-top: 0;
+    color: white;
+    display: inline-block;
+    font-family: 'Lato'!important;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    line-height: 5rem !important
+}
+
+header .top-bar .top-bar-title a img {
+    height: 80px;
+    margin-right: 0.75rem;
+    margin-top: 0;
+    width: 80px
+}
+
+header .float-left {
+    float: left!important
+}
+
+header .top-bar .top-bar-right {
+    width: auto
+}
+
+header .top-bar-right {
+    float: right
+}
+
+header .top-bar ul {
+    background: none;
+    padding-right: 0.9375rem
+}
+
+header .top-bar ul.menu > li {
+    display: table-cell;
+    height: 5.25rem
+}
+
+header .top-bar ul.menu > li a {
+    font-size: 0.875rem;
+    padding: 0.6875rem 1rem;
+    color: white
+}
+
+header .top-bar ul.menu > li a.button {
+    background: white;
+    color: #004A83;
+    text-align: center
+}
+
+header .menu > li {
+    vertical-align: middle
+}
+
+header .menu > li > a {
+    display: block;
+    line-height: 1;
+    margin-bottom: 0
+}
+
+header .menu {
+    list-style-type: none
+}
+
+header ul,
+.footer ul {
+    line-height: 1.6;
+    list-style-position: outside
+}
+
+header .button {
+    display: inline-block;
+    text-align: center;
+    line-height: 1;
+    cursor: pointer;
+    -webkit-appearance: none;
+    transition: background-color 0.25s ease-out, color 0.25s ease-out;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    border-radius: 0.1875rem;
+    padding: 0.85em 1em;
+    margin: 0 0 1rem 0;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    background-color: #2199e8;
+    color: #fff
+}
+
+.footer {
+    background: #DEE0E3;
+    border-top: 6px solid #004A83;
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    clear: both;
+    min-height: 18rem;
+    position: absolute;
+    width: 100%;
+    margin: 0 auto;
+    left: 0;
+}
+
+.footer footer {
+    color: #222
+}
+
+.footer .row {
+    max-width: 1170px;
+    margin: 0 auto
+}
+
+.footer .column:last-child:not(:first-child),
+.footer .columns:last-child:not(:first-child) {
+    float: right
+}
+
+.footer footer .footer-sections {
+    padding-left: 0
+}
+
+.footer .column,
+.footer .columns {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem
+}
+
+.footer .column,
+.footer .columns {
+    width: 100%;
+    float: left;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem
+}
+
+.footer .medium-4,
+.footer .large-4 {
+    width: 33.33333%
+}
+
+.footer .large-8 {
+    width: 66.66667%
+}
+
+.footer .logo {
+    line-height: 3rem;
+    margin-top: 0;
+    color: white;
+    display: inline-block;
+    font-family: 'Lato'!important;
+    font-size: 1.5rem;
+    font-weight: lighter
+}
+
+.footer footer a,
+.footer footer a:active,
+.footer footer a:focus {
+    color: #222222
+}
+
+.footer footer p {
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.625rem
+}
+
+.footer footer a.title {
+    font-weight: bold;
+    text-decoration: none
+}
+
+.footer footer p.info a {
+    text-decoration: underline
+}
+
+.footer .subfooter {
+    border-top: 1px solid #BFBFBF;
+    font-size: 0.875rem;
+    padding-top: 0.75rem
+}
+
+.footer .inline-block {
+    display: inline-block
+}
+
+.footer .no-bullet {
+    margin-left: 0;
+    list-style: none
+}
