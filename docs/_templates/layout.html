@@ -18,6 +18,7 @@
   <title>{{ title|striptags|e }}{{ titlesuffix }}</title>
   {% endblock %}
 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
   {# FAVICON #}
   {% if favicon %}
     <link rel="shortcut icon" href="{{ pathto('_static/' + favicon, 1) }}"/>
@@ -105,97 +106,48 @@
 </head>
 
 <body class="wy-body-for-nav" role="document">
-  <header>
-    <div class="top-links">
-           <div class="row">
-               <div class="hide-for-small-only">
-                   <ul class="no-bullet external-links">
-                       <li>
-                           <a target="_blank" rel="nofollow" title="Go to page of Transparency (link opens in new window)" href="http://votedevin.com/portfolio/open-advocate/">Transparency</a>
-                       </li>
-                       <li>
-                           <a target="_blank" rel="nofollow" title="Go to page of Open data (link opens in new window)" href="http://data.votedevin.com">Open data</a>
-                       </li>
- 
-                       <li>
-                           <a target="_blank" rel="nofollow" title="Go to page of Blog (link opens in new window)" href="http://votedevin.com/blog">Blog</a>
-                       </li>
-                   </ul>
-               </div>
+  <header class="navbar-default">
+      <div class="top-links">
+          <div class="row">
+              <div class="hide-for-small-only">
+                  <ul class="no-bullet external-links">
+                      <li>
+                          <a target="_blank" rel="nofollow" title="Go to page of Transparency (link opens in new window)" href="http://votedevin.com/portfolio/open-advocate/">Transparency</a>
+                      </li>
+                      <li>
+                          <a target="_blank" rel="nofollow" title="Go to page of Open data (link opens in new window)" href="http://data.votedevin.com">Open data</a>
+                      </li>
+
+                      <li>
+                          <a target="_blank" rel="nofollow" title="Go to page of Blog (link opens in new window)" href="http://votedevin.com/blog">Blog</a>
+                      </li>
+                  </ul>
+              </div>
           </div>
       </div>
       <div class="row">
           <div class="top-bar">
-              <a class="logo show-for-small-only" href="/">NY Speaks</a>
-              <span data-responsive-toggle="responsive-menu" data-hide-for="medium" class="float-right" style="display: none;">
-          <span class="menu-icon dark" data-toggle=""></span> Menu
-              </span>
+            <a class="logo show-for-small-only" href="/">NY Speaks</a>
+            <span data-responsive-toggle="responsive-menu" data-hide-for="medium" class="float-right" style="display: none;">
+              <span class="menu-icon dark" data-toggle=""></span> Menu
+            </span>
               <div id="responsive-menu">
-                  <div class="top-bar-title">
-                      <a class="hide-for-small-only" accesskey="0" href="/">
-                          <img class="hide-for-small-only float-left" alt="Consul logo" src="http://proposals.votedevin.com/assets/logo_header-c497c23c17480f29e08b29a4c67e5443840ac73fec749ac3c08097b1cc2e31f4.png" width="80" height="80"> NY Speaks
-                      </a>
-                  </div>
+                <div class="top-bar-title">
+                    <a class="hide-for-small-only" accesskey="0" href="/">
+                        <img class="hide-for-small-only float-left" alt="Consul logo" src="{{ pathto('_static/' + 'logo_header.png', 1) }}" width="80" height="80"> NY Speaks
+                    </a>
+                </div>
                   <div class="top-bar-right">
-                      <ul class="menu">
-                          <li>
-                              <a rel="nofollow" href="/users/sign_in">Sign in</a>
-                          </li>
-                          <li>
-                              <a rel="nofollow" class="button" href="/users/sign_up">Register</a>
-                          </li>
-                      </ul>
-                      <!-- <div class="show-for-small-only">
-                      <div class="subnavigation row">
-                          <div class="small-12 medium-9 column">
-                              <ul>
-                                  <li>
-                                      <a accesskey="1" title="Go to page of Conversations" href="/conversations">Conversations</a>
-                                  </li>
-                                  <li>
-                                      <a accesskey="2" title="Go to page of Proposals" href="/proposals">Proposals</a>
-                                  </li>
-                                  <li>
-                                      <a accesskey="3" href="http://nyc.councilmatic.org">Actions</a>
-                                  </li>
-                                  <li>
-                                      <a accesskey="4" href="http://nyclaws.readthedocs.io">Laws</a>
-                                  </li>
-                                  <li>
-                                      <a accesskey="5" href="http://budgets.votedevin.com">Projects</a>
-                                  </li>
-                                  <li>
-                                      <a accesskey="6" href="http://simny.city">Activities</a>
-                                  </li>
-                                  <li>
-                                      <a accesskey="7" href="http://votedevin.com/category/outcome-analysis">Outcomes</a>
-                                  </li>
-                                  <li>
-                                      <a accesskey="8" href=" http://proposals.votedevin.com/more-information">About</a>
-                                  </li>
-                              </ul>
-                          </div>
-                          <div class="small-12 column">
-                              <ul class="no-bullet external-links">
-                                  <li>
-                                      <a target="_blank" rel="nofollow" title="Go to page of Transparency (link opens in new window)" href="http://votedevin.com/portfolio/open-advocate/">Transparency</a>
-                                  </li>
-                                  <li>
-                                      <a target="_blank" rel="nofollow" title="Go to page of Open data (link opens in new window)" href="http://data.votedevin.com">Open data</a>
-                                  </li>
-
-                                  <li>
-                                      <a target="_blank" rel="nofollow" title="Go to page of Blog (link opens in new window)" href="http://votedevin.com/blog">Blog</a>
-                                  </li>
-                              </ul>
-                          </div>
+                    <div class="hamburger hamburger--slider" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                      <div class="hamburger-box">
+                          <div class="hamburger-inner"></div>
                       </div>
-                  </div> -->
+                    </div>
                   </div>
               </div>
           </div>
       </div>
-      <div class="subnavigation expanded">
+      <div id="navbar" class="subnavigation navbar-collapse collapse">
           <div class="row">
               <div class="hide-for-small-only">
                   <div class="small-12 medium-9 column">
@@ -237,15 +189,6 @@
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
-      {# MOBILE NAV, TRIGGLES SIDE NAV ON TOGGLE #}
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        {% block mobile_nav %}
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="{{ pathto(master_doc) }}">{{ project }}</a>
-        {% endblock %}
-      </nav>
-
-
       {# PAGE CONTENT #}
       <div class="wy-nav-content">
         <div class="rst-content">
@@ -263,61 +206,17 @@
       </div>
 
     </section>
-    <div class="footer">
+    
+  </div>
+
+  <div class="footer">
       <footer>
         <div class="row">
-          <div class="small-12 large-4 column">
-            <h1 class="logo"><a href="/">Open government</a></h1>
-            <p class="info">
-              This portal uses the <a target="blank" rel="nofollow" href="https://github.com/consul/consul">Consul application</a> which is <a target="blank" rel="nofollow" href="http://www.gnu.org/licenses/agpl-3.0.html">open-source software</a>. For technical assistance enters
-              <a href="/more-information/faq">technical assistance</a>
-            </p>
-          </div>
-          <div class="footer-sections small-12 large-8 column">
-            <div class="small-12 medium-4 column">
-              <a class="title" href="/">Participation</a>
-              <p>Decide how to shape the city you want to live in.</p>
-            </div>
-            <div class="small-12 medium-4 column">
-              <a class="title" rel="nofollow" href="http://votedevin.com/portfolio/open-advocate/">Transparency</a>
-              <p>Find out anything about the city.</p>
-            </div>
-            <div class="small-12 medium-4 column">
-              <a class="title" rel="nofollow" href="http://data.votedevin.com">Open data</a>
-              <p>Every detail about the City Council is yours to access.</p>
-            </div>
-          </div>
-        </div>
-        <div class="subfooter row">
-          <div class="small-12 medium-8 column"> Consul, 2017&nbsp;|
-            <ul class="no-bullet inline-block">
-              <li class="inline-block"><a href="/privacy">Privacy Policy</a>&nbsp;|</li>
-              <li class="inline-block"><a href="/conditions">Terms and conditions of use</a>&nbsp;|</li>
-              <li class="inline-block"><a href="/accessibility">Accessibility</a></li>
-            </ul>
-          </div>
-          <div class="small-12 medium-4 column social">
-            <div class="text-right">
-              <ul>
-                <li class="inline-block">
-                  <a target="_blank" title="Go to page of NY Speaks Facebook (link opens in new window)" href="https://www.facebook.com/votedevin/">
-                    <span class="sr-only">NY Speaks Facebook</span>
-                    <span class="icon-facebook" aria-hidden="true"></span>
-                  </a>
-                </li>
-                <li class="inline-block">
-                  <a target="_blank" title="Go to page of NY Speaks Blog (link opens in new window)" href="http://votedevin.com/blog">
-                    <span class="sr-only">NY Speaks Blog</span>
-                    <span class="icon-blog" aria-hidden="true"></span>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png"></a><br>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>. It was funded and developed by Friends of Devin Balkind, a political organization urging you to Vote for Devin Balkind for New York City Public Advocate in November. Learn more at <a href="http://proposals.votedevin.com/" target="_blank"> VoteDevin.com</a>.
       </footer>
     </div>
-  </div>
+  
+  {% include "versions.html" %}
 
   {% if not embedded %}
 
@@ -342,6 +241,8 @@
     <script type="text/javascript" src="{{ pathto('_static/js/theme.js', 1) }}"></script>
   {% endif %}
 
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
   {# STICKY NAVIGATION #}
   {% if theme_sticky_navigation %}
   <script type="text/javascript">
@@ -362,6 +263,11 @@
     });
   });
 </script>
-
+<script>
+  $(document).ready(function(){
+      /* Hamburgers Icon for iPad / Mobile Menu */
+      var forEach=function(e,t,r){if("[object Object]"===Object.prototype.toString.call(e))for(var c in e)Object.prototype.hasOwnProperty.call(e,c)&&t.call(r,e[c],c,e);else for(var a=0,l=e.length;l>a;a++)t.call(r,e[a],a,e)},hamburgers=document.querySelectorAll(".hamburger");hamburgers.length>0&&forEach(hamburgers,function(e){e.addEventListener("click",function(){this.classList.toggle("is-active")},!1)});
+    });
+</script>
 </body>
 </html>
