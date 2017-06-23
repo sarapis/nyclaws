@@ -106,91 +106,122 @@
 </head>
 
 <body class="wy-body-for-nav" role="document">
-  <header class="navbar-default">
-      <div class="top-links">
-          <div class="row">
-              <div class="hide-for-small-only">
-                  <ul class="no-bullet external-links">
-                      <li>
-                          <a target="_blank" rel="nofollow" title="Go to page of Transparency (link opens in new window)" href="http://votedevin.com/portfolio/open-advocate/">Transparency</a>
-                      </li>
-                      <li>
-                          <a target="_blank" rel="nofollow" title="Go to page of Open data (link opens in new window)" href="http://data.votedevin.com">Open data</a>
-                      </li>
 
-                      <li>
-                          <a target="_blank" rel="nofollow" title="Go to page of Blog (link opens in new window)" href="http://votedevin.com/blog">Blog</a>
-                      </li>
-                  </ul>
-              </div>
-          </div>
-      </div>
-      <div class="row">
-          <div class="top-bar">
-            <a class="logo show-for-small-only" href="/">NY Speaks</a>
-            <span data-responsive-toggle="responsive-menu" data-hide-for="medium" class="float-right" style="display: none;">
-              <span class="menu-icon dark" data-toggle=""></span> Menu
-            </span>
-              <div id="responsive-menu">
-                <div class="top-bar-title">
-                    <a class="hide-for-small-only" accesskey="0" href="/">
-                        <img class="hide-for-small-only float-left" alt="Consul logo" src="{{ pathto('_static/' + 'logo_header.png', 1) }}" width="80" height="80"> NY Speaks
-                    </a>
-                </div>
-                  <div class="top-bar-right">
-                    <div class="hamburger hamburger--slider" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                      <div class="hamburger-box">
-                          <div class="hamburger-inner"></div>
-                      </div>
-                    </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-      <div id="navbar" class="subnavigation navbar-collapse collapse">
-          <div class="row">
-              <div class="hide-for-small-only">
-                  <div class="small-12 medium-9 column">
-                      <ul>
-                          <li>
-                              <a accesskey="1" title="Go to page of Conversations" href="/conversations">Conversations</a>
-                          </li>
-                          <li>
-                              <a accesskey="2" title="Go to page of Proposals" href="/proposals">Proposals</a>
-                          </li>
-                          <li>
-                              <a accesskey="3" href="http://nyc.councilmatic.org">Actions</a>
-                          </li>
-                          <li>
-                              <a accesskey="4" href="http://nyclaws.readthedocs.io">Laws</a>
-                          </li>
-                          <li>
-                              <a accesskey="5" href="http://budgets.votedevin.com">Projects</a>
-                          </li>
-                          <li>
-                              <a accesskey="6" href="http://simny.city">Activities</a>
-                          </li>
-                          <li>
-                              <a accesskey="7" href="http://votedevin.com/category/outcome-analysis">Outcomes</a>
-                          </li>
-                          <li>
-                              <a accesskey="8" href=" http://proposals.votedevin.com/more-information">About</a>
-                          </li>
-                      </ul>
-                  </div>
-              </div>
-              <div class="small-12 medium-3 column">
-              </div>
-          </div>
-      </div>
-  </header>
   {% block extrabody %} {% endblock %}
+
   <div class="wy-grid-for-nav">
 
+    {# SIDE NAV, TOGGLES ON MOBILE #}
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          {% block sidebartitle %}
+
+          {% if logo and theme_logo_only %}
+            <a href="{{ pathto(master_doc) }}">
+          {% else %}
+            <a href="{{ pathto(master_doc) }}" class="icon icon-home"> {{ project }}
+          {% endif %}
+
+          {% if logo %}
+            {# Not strictly valid HTML, but it's the only way to display/scale it properly, without weird scripting or heaps of work #}
+            <img src="{{ pathto('_static/' + logo, 1) }}" class="logo" />
+          {% endif %}
+          </a>
+
+          {% if theme_display_version %}
+            {%- set nav_version = version %}
+            {% if READTHEDOCS and current_version %}
+              {%- set nav_version = current_version %}
+            {% endif %}
+            {% if nav_version %}
+              <div class="version">
+                {{ nav_version }}
+              </div>
+            {% endif %}
+          {% endif %}
+
+          {% include "searchbox.html" %}
+
+          {% endblock %}
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          {% block menu %}
+            {#
+              The singlehtml builder doesn't handle this toctree call when the
+              toctree is empty. Skip building this for now.
+            #}
+            {% if 'singlehtml' not in builder %}
+              {% set global_toc = toctree(maxdepth=theme_navigation_depth|int, collapse=theme_collapse_navigation, includehidden=True) %}
+            {% endif %}
+            {% if global_toc %}
+              {{ global_toc }}
+            {% else %}
+              <!-- Local TOC -->
+              <div class="local-toc">{{ toc }}</div>
+            {% endif %}
+          {% endblock %}
+        </div>
+      </div>
+    </nav>
+    
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <header class="navbar-default">
+        <div class="top-links">
+          <div class="wy-nav-content">
+
+          {# MOBILE NAV, TRIGGLES SIDE NAV ON TOGGLE #}
+          <div class="wy-nav-top" role="navigation" aria-label="top navigation">
+            {% block mobile_nav %}
+              <div class="hamburger hamburger--slider" data-toggle="wy-nav-top">
+              <div class="hamburger-box">
+                <div class="hamburger-inner"></div>
+              </div>
+              </div>
+            {% endblock %}
+          </div>
+
+            <ul>
+              <li><a target="_blank" rel="nofollow" title="Go to page of Transparency (link opens in new window)" href="http://votedevin.com/portfolio/open-advocate/">Transparency</a></li>
+              <li><a target="_blank" rel="nofollow" title="Go to page of Open data (link opens in new window)" href="http://data.votedevin.com">Open data</a></li>
+              <li><a target="_blank" rel="nofollow" title="Go to page of Blog (link opens in new window)" href="http://votedevin.com/blog">Blog</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="logo-section">
+          <div class="logo">
+            <a href="/">
+              <img class="hide-for-small-only float-left" alt="Consul logo" src="{{ pathto('_static/' + 'logo_header.png', 1) }}" width="80" height="80">
+              NY Speaks
+            </a>
+          </div>
+          <div class="menu-button">
+            <div class="hamburger hamburger--slider collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <div class="hamburger-box">
+                <div class="hamburger-inner"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="navbar" class="subnavigation navbar-collapse collapse" aria-expanded="false">
+          <div class="wy-nav-content">
+            <ul>
+              <li><a accesskey="1" title="Go to page of Conversations" href="/conversations">Conversations</a></li>
+              <li><a accesskey="2" title="Go to page of Proposals" href="/proposals">Proposals</a></li>
+              <li><a accesskey="3" href="http://nyc.councilmatic.org">Actions</a></li>
+              <li><a accesskey="4" href="http://nyclaws.readthedocs.io">Laws</a></li>
+              <li><a accesskey="5" href="http://budgets.votedevin.com">Projects</a></li>
+              <li><a accesskey="6" href="http://simny.city">Activities</a></li>
+              <li><a accesskey="7" href="http://votedevin.com/category/outcome-analysis">Outcomes</a></li>
+              <li><a accesskey="8" href=" http://proposals.votedevin.com/more-information">About</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
 
       {# PAGE CONTENT #}
-      <div class="wy-nav-content">
+      <div class="wy-nav-content set-margin">
         <div class="rst-content">
           {% include "breadcrumbs.html" %}
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
@@ -204,17 +235,15 @@
           {% include "footer.html" %}
         </div>
       </div>
-
-    </section>
-    
-  </div>
-
-  <div class="footer">
-      <footer>
-        <div class="row">
-        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png"></a><br>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>. It was funded and developed by Friends of Devin Balkind, a political organization urging you to Vote for Devin Balkind for New York City Public Advocate in November. Learn more at <a href="http://proposals.votedevin.com/" target="_blank"> VoteDevin.com</a>.
+      <footer class="footer">
+        <div class="wy-nav-content">
+          <a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png"></a><br>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>. It was funded and developed by Friends of Devin Balkind, a political organization urging you to Vote for Devin Balkind for New York City Public Advocate in November. Learn more at <a href="http://proposals.votedevin.com/" target="_blank"> VoteDevin.com</a>.
+        </div>
       </footer>
-    </div>
+    </section>
+  </div>
+  
+  {% include "versions.html" %}
   
   {% if not embedded %}
 
