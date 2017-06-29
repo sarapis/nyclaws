@@ -183,9 +183,10 @@
           </div>
 
             <ul>
-              <li><a target="_blank" rel="nofollow" title="Go to page of Transparency (link opens in new window)" href="http://votedevin.com/portfolio/open-advocate/">Transparency</a></li>
-              <li><a target="_blank" rel="nofollow" title="Go to page of Open data (link opens in new window)" href="http://data.votedevin.com">Open data</a></li>
-              <li><a target="_blank" rel="nofollow" title="Go to page of Blog (link opens in new window)" href="http://votedevin.com/blog">Blog</a></li>
+              <li><a target="_blank" rel="nofollow" title="Go to Votedevin.com(link opens in new window)" href="http://votedevin.com">Vote Devin</a></li>
+              <li><a target="_blank" rel="nofollow" title="Go to page of Organizing Team (link opens in new window)" href="http://nyspeaks.org/organizing-team">Organizing Team</a></li>
+              <li><a target="_blank" rel="nofollow" title="Go to page of Open data (link opens in new window)" href="http://data.nyspeaks.org">Open data</a></li>
+              <li><a target="_blank" rel="nofollow" title="Go to page of Blog (link opens in new window)" href="http://nyspeaks.org/blog">Blog</a></li>
             </ul>
           </div>
         </div>
@@ -291,10 +292,26 @@
   });
 </script>
 <script>
+  function removeTheAd(){
+    var maxTries = 5;
+    var timer = setInterval(function() {
+      var adObj = $('.wy-menu.rst-pro');
+      if(adObj.length > 0) {
+        $('.wy-menu.rst-pro').remove();  
+        clearInterval(timer);
+        return true;
+      } else if(maxTries == 0) {
+        clearInterval(timer);
+        return false;
+      }
+      maxTries = maxTries - 1;
+    }, 200);
+  }
   $(document).ready(function(){
-      /* Hamburgers Icon for iPad / Mobile Menu */
-      var forEach=function(e,t,r){if("[object Object]"===Object.prototype.toString.call(e))for(var c in e)Object.prototype.hasOwnProperty.call(e,c)&&t.call(r,e[c],c,e);else for(var a=0,l=e.length;l>a;a++)t.call(r,e[a],a,e)},hamburgers=document.querySelectorAll(".hamburger");hamburgers.length>0&&forEach(hamburgers,function(e){e.addEventListener("click",function(){this.classList.toggle("is-active")},!1)});
-    });
+    removeTheAd();
+    /* Hamburgers Icon for iPad / Mobile Menu */
+    var forEach=function(e,t,r){if("[object Object]"===Object.prototype.toString.call(e))for(var c in e)Object.prototype.hasOwnProperty.call(e,c)&&t.call(r,e[c],c,e);else for(var a=0,l=e.length;l>a;a++)t.call(r,e[a],a,e)},hamburgers=document.querySelectorAll(".hamburger");hamburgers.length>0&&forEach(hamburgers,function(e){e.addEventListener("click",function(){this.classList.toggle("is-active")},!1)});
+  });
 </script>
 </body>
 </html>
