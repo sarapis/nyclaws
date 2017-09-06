@@ -6,7 +6,11 @@
 NYC Laws
 =================================
 
-Have you tried reading the NYC Charter and Administrative Code? Good luck! We put the laws and code that govern our city into a searchable, readable and version-controlled format.
+Have you tried reading the NYC Charter and Administrative Code? Good luck! We put the City Charter and Administrative Codes that govern New York City into a searchable, linkable, version-controlled format. You can even propose edits!
+
+Get started by click on the documents in the left sidebar.
+
+Enjoy!
 
 
 .. toctree::
